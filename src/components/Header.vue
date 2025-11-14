@@ -82,7 +82,13 @@ function toggleNavDrawer() {
   >
     <div class="flex items-center h-full">
       <a href="/" mr-6 aria-label="Header Logo Image">
-        <img width="32" height="32" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
+        <img
+          width="36"
+          height="36"
+          :src="siteConfig.header.logo.src"
+          :alt="siteConfig.header.logo.alt"
+          class="dark:filter dark:invert"
+        >
       </a>
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a

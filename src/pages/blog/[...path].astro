@@ -26,6 +26,10 @@ function activeLink(pathname: string) {
 ---
 
 <BaseLayout title="Blog" description="List of all the blog posts." pageNav={true} pageOperate={true}>
+  {
+    /*
+this part is disabled for now - we may re-enable it in the future as it is uesd for blog categories/tags navigation
+
   <div class="flex flex-col gap-2 sm:flex-row sm:gap-4 flex-wrap mb-8">
     {
       siteConfig.page.blogLinks.map((nav) => (
@@ -39,5 +43,8 @@ function activeLink(pathname: string) {
       ))
     }
   </div>
+*/
+  }
+  <h1 class="mb-10 text-title">List Of Articles</h1>
   <ListPosts list={posts} />
 </BaseLayout>
